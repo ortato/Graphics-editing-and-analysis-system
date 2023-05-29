@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>204</x>
+      <y>89</y>
+      <width>361</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCurve">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>线宽</string>
+    </property>
+    <addaction name="actionwidth_1"/>
+    <addaction name="actionwidth_2"/>
+    <addaction name="actionwidth_3"/>
+    <addaction name="actionwidth_5"/>
+   </widget>
+   <addaction name="menuCurve"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actionLine"/>
+   <addaction name="actionRectangle"/>
+   <addaction name="actionCircle"/>
+   <addaction name="actionEllipse"/>
+   <addaction name="actionCurve"/>
+   <addaction name="actionPen"/>
+   <addaction name="separator"/>
+   <addaction name="actionColor"/>
+   <addaction name="separator"/>
+   <addaction name="actionDelete"/>
+   <addaction name="actionClear"/>
+   <addaction name="actionFill"/>
+   <addaction name="actionUndo"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="text">
+    <string>曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>曲线</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionCircle">
+   <property name="text">
+    <string>圆</string>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>颜色</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除当前图形</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除所有图形</string>
+   </property>
+  </action>
+  <action name="actionFill">
+   <property name="text">
+    <string>填充</string>
+   </property>
+   <property name="toolTip">
+    <string>为图形填充颜色</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="actionwidth_1">
+   <property name="text">
+    <string>width=1</string>
+   </property>
+   <property name="toolTip">
+    <string>宽度为1</string>
+   </property>
+  </action>
+  <action name="actionwidth_2">
+   <property name="text">
+    <string>width=2</string>
+   </property>
+   <property name="toolTip">
+    <string>宽度为2</string>
+   </property>
+  </action>
+  <action name="actionwidth_3">
+   <property name="text">
+    <string>width=3</string>
+   </property>
+   <property name="toolTip">
+    <string>宽度为3</string>
+   </property>
+  </action>
+  <action name="actionwidth_5">
+   <property name="text">
+    <string>width=5</string>
+   </property>
+   <property name="toolTip">
+    <string>宽度为5</string>
+   </property>
+  </action>
+  <action name="actionPen">
+   <property name="text">
+    <string>画笔</string>
+   </property>
+   <property name="toolTip">
+    <string>画笔，涂鸦笔</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="text">
+    <string>矩形</string>
+   </property>
+   <property name="toolTip">
+    <string>矩形</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
